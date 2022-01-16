@@ -18,6 +18,18 @@ import com.baps.mysatsangapi.ApiConfig;
 import io.micrometer.core.instrument.Metrics;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 
+/**
+ * https://micrometer.io : As an instrumentation facade, Micrometer allows you to instrument your code with dimensional 
+ *  metrics with a vendor-neutral interface and decide on the monitoring system as a last step.
+ *  Instrumenting your core library code with Micrometer allows the libraries to be included in applications
+ *  that ship metrics to different backends.
+ *  Contains built-in support for AppOptics, Azure Monitor, Netflix Atlas, CloudWatch, Datadog, 
+ *  Dynatrace, Elastic,Ganglia, Graphite, Humio, Influx/Telegraf, JMX, KairosDB, New Relic, Prometheus, 
+ *  SignalFx, Google Stackdriver, StatsD, and Wavefront.
+ * 
+ * @author mayuresh
+ *
+ */
 public class MetricsFilter implements Filter {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(MetricsFilter.class);

@@ -1,4 +1,4 @@
-package com.baps.mysatsangapi.models;
+package com.baps.mysatsangapi.entities;
 
 import java.io.Serializable;
 
@@ -10,7 +10,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 
-@Entity
+
+@Entity(name="person")
+@Getter
+@Setter
 public class Person implements Serializable{
 
 	private static final long serialVersionUID = -1188536722375232294L;
@@ -58,6 +61,12 @@ public class Person implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", personName=" + personName + ", personCategory=" + personCategory
+				+ ", personMandir=" + personMandir + "]";
 	}
 
 	

@@ -1,12 +1,15 @@
-package com.baps.mysatsangapi.advice;
+package com.baps.mysatsangapi.advices;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
+
+import com.baps.mysatsangapi.exceptions.PersonNotFoundException;
+
 import org.springframework.http.HttpStatus;
 
-import com.baps.mysatsangapi.handlers.PersonNotFoundException;
+
 
 @ControllerAdvice
 public class PersonNotFoundAdvice {

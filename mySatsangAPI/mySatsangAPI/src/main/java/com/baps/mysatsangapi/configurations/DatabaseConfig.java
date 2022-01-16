@@ -1,4 +1,4 @@
-package com.baps.mysatsangapi.configuration;
+package com.baps.mysatsangapi.configurations;
 
 
 
@@ -12,8 +12,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.baps.mysatsangapi.models.Person;
-import com.baps.mysatsangapi.repository.PersonRepository;
+import com.baps.mysatsangapi.entities.Person;
+import com.baps.mysatsangapi.repositories.PersonRepository;
+
 
 @Configuration
 public class DatabaseConfig {
